@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fastapi_localization.parser.accept_language_parser" class="md-skip">
+        <a href="#fastapi_l10n.parser.accept_language_parser" class="md-skip">
           Skip to content
         </a>
       
@@ -345,7 +345,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fastapi_localization.parser.accept_language_parser" class="md-nav__link">
+  <a href="#fastapi_l10n.parser.accept_language_parser" class="md-nav__link">
     <span class="md-ellipsis">
       accept_language_parser
     </span>
@@ -406,7 +406,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#fastapi_localization.parser.accept_language_parser" class="md-nav__link">
+  <a href="#fastapi_l10n.parser.accept_language_parser" class="md-nav__link">
     <span class="md-ellipsis">
       accept_language_parser
     </span>
@@ -438,13 +438,13 @@
 
 
 
-<a id="fastapi_localization.parser.accept_language_parser"></a>
+<a id="fastapi_l10n.parser.accept_language_parser"></a>
     <div class="doc doc-contents first">
 
         <p>Parses the <code>Accept-Language</code> header and returns a list of <code>LanguagePreference</code> objects,
 sorted by weight in descending order.</p>
 <p>Examples:
-    <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi_localization.parser</span><span class="w"> </span><span class="kn">import</span> <span class="n">accept_language_parser</span>
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi_l10n.parser</span><span class="w"> </span><span class="kn">import</span> <span class="n">accept_language_parser</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">accept_language_parser</span><span class="p">(</span><span class="s2">&quot;en-US,en;q=0.9,fr;q=0.8,de;q=0.7&quot;</span><span class="p">)</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Result:</span>
@@ -499,7 +499,7 @@ sorted by weight in descending order.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>list[<a class="autorefs autorefs-internal" title="fastapi_localization.types.LanguagePreference" href="../types/#fastapi_localization.types.LanguagePreference">LanguagePreference</a>]</code>
+                  <code>list[<a class="autorefs autorefs-internal" title="fastapi_l10n.types.LanguagePreference" href="../types/#fastapi_l10n.types.LanguagePreference">LanguagePreference</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -511,7 +511,7 @@ sorted by weight in descending order.</p>
     </table>
 
             <details class="quote">
-              <summary>Source code in <code>fastapi_localization/parser.py</code></summary>
+              <summary>Source code in <code>fastapi_l10n/parser.py</code></summary>
               <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-12">12</a></span>
 <span class="normal"><a href="#__codelineno-0-13">13</a></span>
 <span class="normal"><a href="#__codelineno-0-14">14</a></span>
@@ -572,7 +572,7 @@ sorted by weight in descending order.</p>
 </span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="sd">    Examples:</span>
 </span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="sd">        ```python</span>
 </span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="sd">        from fastapi_localization.parser import accept_language_parser</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="sd">        from fastapi_l10n.parser import accept_language_parser</span>
 </span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a>
 </span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="sd">        accept_language_parser(&quot;en-US,en;q=0.9,fr;q=0.8,de;q=0.7&quot;)</span>
 </span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="sd">        # Result:</span>
