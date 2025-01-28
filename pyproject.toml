@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "fastapi-localization"
+version = "0.1.0"
+description = ""
+authors = ["artemprotaev <a.protaev@atomgroup.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "*"
+fluent = "*"
+fluent-runtime = "*"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.3"
+pre-commit = "^4.1.0"
+pydoclint = "^0.6.0"
+bandit = "^1.8.2"
+uvicorn = "^0.34.0"
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+show-fixes = true
+output-format = "concise"
+src = ["."]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "W",
+    "F",
+    "B",
+    "UP",
+    "ASYNC",
+    "S",
+    "BLE",
+    "PIE",
+    "T20",
+    "C4",
+    "RET",
+    "COM",
+    "I",
+    "RUF200",
+]
+ignore = [
+    "E501",
+    "B008",
+    "W191",
+    "B904",
+    "COM812",
+    "S101",
+    "S104",
+    "BLE001",
+    "RET503",
+]
+fixable = ["ALL"]
+unfixable = ["B", "N"]
+
+[tool.ruff.lint.per-file-ignores]
+'__init__.py' = [
+    'F403',
+    'F405',
+]
+"tests/*" = ["S101", "D103", "D101", "D102"]
+"*pb2*.py" = ["I", "F401", "E402", "F541", "UP"]
+
+[tool.ruff.lint.isort]
+lines-between-types = 1
+lines-after-imports = 2
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 3
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
