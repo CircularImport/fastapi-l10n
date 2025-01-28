@@ -1,6 +1,6 @@
-site_name: FastAPI Localization
-repo_url: https://github.com/CircularImport/fastapi-localization
-repo_name: CircularImport/fastapi-localization
+site_name: FastAPI L10n
+repo_url: https://github.com/CircularImport/fastapi-l10n
+repo_name: CircularImport/fastapi-l10n
 
 theme:
   name: material
