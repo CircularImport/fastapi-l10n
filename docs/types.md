@@ -1,1 +1,1 @@
-::: fastapi_localization.types.LanguagePreference
+::: fastapi_l10n.types.LanguagePreference

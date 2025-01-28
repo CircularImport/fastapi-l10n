@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "fastapi-localization"
+name = "fastapi-l10n"
 version = "0.1.0"
 description = ""
 authors = ["artemprotaev <a.protaev@atomgroup.io>"]

@@ -1,6 +1,6 @@
 import logging
 
-from fastapi_localization.types import LanguagePreference
+from fastapi_l10n.types import LanguagePreference
 
 
 __all__ = ["accept_language_parser"]
@@ -17,7 +17,7 @@ def accept_language_parser(accept_language: str) -> list[LanguagePreference]:
     Examples:
         ```python
 
-        from fastapi_localization.parser import accept_language_parser
+        from fastapi_l10n.parser import accept_language_parser
 
         accept_language_parser("en-US,en;q=0.9,fr;q=0.8,de;q=0.7")
         # Result:

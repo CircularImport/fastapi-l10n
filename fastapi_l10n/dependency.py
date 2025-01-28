@@ -5,8 +5,8 @@ from typing import Annotated, Callable, Union
 
 from fastapi import Depends, Header
 
-from fastapi_localization.l10n import localization
-from fastapi_localization.parser import accept_language_parser
+from fastapi_l10n.l10n import localization
+from fastapi_l10n.parser import accept_language_parser
 
 
 __all__ = ["L10nDepends"]
@@ -48,7 +48,7 @@ Examples:
     ```python
 
     from fastapi import FastAPI
-    from fastapi_localization import L10nDepends
+    from fastapi_l10n import L10nDepends
 
     app = FastAPI()
 

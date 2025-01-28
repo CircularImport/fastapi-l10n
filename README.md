@@ -6,7 +6,7 @@ Util for localization FastAPI application (powered by Fluent)
 
 ```python
 from fastapi import FastAPI
-from fastapi_localization import L10nDepends, setup_localization
+from fastapi_l10n import L10nDepends, setup_localization
 
 setup_localization(
     allowed_locales=["en", "fr", "de"],

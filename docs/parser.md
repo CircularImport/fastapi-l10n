@@ -1,1 +1,1 @@
-::: fastapi_localization.parser.accept_language_parser
+::: fastapi_l10n.parser.accept_language_parser

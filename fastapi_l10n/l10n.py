@@ -137,7 +137,7 @@ setup_localization = localization.setup
 Examples:
     ```python
 
-    from fastapi_localization import setup_localization
+    from fastapi_l10n import setup_localization
 
     setup_localization(
         allowed_locales=["en", "fr", "de"],
