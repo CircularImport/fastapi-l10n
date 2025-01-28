@@ -22,9 +22,7 @@ async def localization_dependency(
     Dependency function to determine the localization based on the Accept-Language header.
 
     :param accept_language: The Accept-Language header value.
-    :type accept_language: str | None
     :return: A partially applied gettext function with the selected locale.
-    :rtype: Callable[[str, dict], str]
     """
     locale = localization.default_locale
 
@@ -46,7 +44,8 @@ L10nDepends = Annotated[Callable[[str, dict], str], Depends(dependency=localizat
 """
 Dependency to determine the localization based on the Accept-Language header.
 
-E.g::
+Examples:
+    ```python
 
     from fastapi import FastAPI
     from fastapi_localization import L10nDepends
@@ -56,4 +55,5 @@ E.g::
     @app.get("/")
     async def root(_: L10nDepends):
         return _("hello-message", args={"username": "John"})
+    ```
 """

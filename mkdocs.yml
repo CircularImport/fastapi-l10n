@@ -33,8 +33,12 @@ theme:
     - content.code.copy
 
 plugins:
-  - mkdocstrings
   - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: sphinx
 
 markdown_extensions:
   - pymdownx.highlight:

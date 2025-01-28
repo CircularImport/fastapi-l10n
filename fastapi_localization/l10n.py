@@ -133,3 +133,20 @@ class Localization:
 
 localization = Localization()
 setup_localization = localization.setup
+"""
+Examples:
+    ```python
+
+    from fastapi_localization import setup_localization
+
+    setup_localization(
+        allowed_locales=["en", "fr", "de"],
+        default_locale="en",
+        resource_ids={
+            "en": ["main.ftl"],
+            "fr": ["main.ftl"],
+            "de": ["main.ftl"],
+        }
+    )
+    ```
+"""

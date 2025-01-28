@@ -19,6 +19,7 @@ pre-commit = "^4.1.0"
 pydoclint = "^0.6.0"
 bandit = "^1.8.2"
 uvicorn = "^0.34.0"
+mkdocstrings-python = "^1.13.0"
 
 
 [tool.poetry.group.docs.dependencies]

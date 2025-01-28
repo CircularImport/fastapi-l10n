@@ -14,18 +14,23 @@ def accept_language_parser(accept_language: str) -> list[LanguagePreference]:
     Parses the `Accept-Language` header and returns a list of `LanguagePreference` objects,
     sorted by weight in descending order.
 
-    :param accept_language: The value of the `Accept-Language` header.
-    :return: A list of `LanguagePreference` objects, sorted by weight in descending order.
+    Examples:
+        ```python
 
-    E.g::
+        from fastapi_localization.parser import accept_language_parser
 
-        >>> accept_language_parser("en-US,en;q=0.9,fr;q=0.8,de;q=0.7")
+        accept_language_parser("en-US,en;q=0.9,fr;q=0.8,de;q=0.7")
+        # Result:
         [
             LanguagePreference(language='en-US', weight=1.0),
             LanguagePreference(language='en', weight=0.9),
             LanguagePreference(language='fr', weight=0.8),
             LanguagePreference(language='de', weight=0.7)
         ]
+        ```
+
+    :param accept_language: The value of the `Accept-Language` header.
+    :return: A list of `LanguagePreference` objects, sorted by weight in descending order.
     """
     languages = []
 
