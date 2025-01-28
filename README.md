@@ -1,4 +1,4 @@
-# FastAPI Localization
+# FastAPI L10N
 
 Util for localization FastAPI application (powered by Fluent)
 
