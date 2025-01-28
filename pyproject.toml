@@ -24,6 +24,7 @@ uvicorn = "^0.34.0"
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.6.1"
 mkdocs-material = "^9.5.50"
+mkdocstrings = "^0.27.0"
 
 [tool.ruff]
 line-length = 120
